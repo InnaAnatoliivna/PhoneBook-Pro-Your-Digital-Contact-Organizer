@@ -7,7 +7,7 @@ const HomePage = () => {
     return (
         <div className={css.wrapper}>
             <h2 className={css.title}>Welcome to PhoneBook Pro!</h2>
-            <p className={css.subtext}>Please register or log in</p>
+            <p className={css.subtext}>Please register or log in to get started!</p>
             <div className={css.thumb}>
                 <img src={screenPhoneBook4} alt='icon4' width="750" height="450" className={css.iconBook} />
             </div>
