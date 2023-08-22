@@ -1,0 +1,21 @@
+.wrapper {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin-top: auto;
+  background-color: #a7dae7;
+  box-shadow: 0 5px 20px rgba(74, 82, 124, 0.2);
+
+  padding: 22px;
+  margin-top: 22px;
+}
+
+.text {
+  color: var(--color-title);
+  font-weight: 500;
+  font-size: 15px;
+
+  display: flex;
+  justify-content: center;
+}

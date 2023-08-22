@@ -1,0 +1,27 @@
+.wrapper {
+  background-color: #a7dae7;
+  box-shadow: 0 5px 20px rgba(74, 82, 124, 0.2);
+
+  margin-bottom: 22px;
+}
+.title {
+  color: var(--color-title);
+  font-weight: 700;
+  font-size: 35px;
+  text-decoration: none;
+
+  padding-top: 20px;
+}
+
+.subtitle {
+  color: var(--color-title);
+  font-weight: 500;
+  font-size: 18.5px;
+
+  margin-top: 8px;
+  padding-bottom: 16px;
+}
+
+.flexChild {
+  margin-left: auto;
+}

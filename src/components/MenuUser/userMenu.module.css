@@ -1,0 +1,54 @@
+.flexParent {
+  display: flex;
+}
+.wrapper {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-title);
+  text-decoration: none;
+  transition: color linear 500ms;
+
+  margin-right: 20px;
+  padding: 30px 0;
+  display: flex;
+
+  &:hover {
+    color: var(--bc-btn-hover);
+  }
+}
+
+.email {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--color-title);
+}
+
+.button {
+  color: var(--color-btn);
+  background: var(--bc-btn);
+  font-size: 16px;
+
+  padding: 14px 10px;
+  border-radius: 14px;
+  border-color: transparent;
+  display: inline-block;
+  outline: none;
+  transition: background linear 500px;
+
+  &:hover {
+    background: var(--bc-btn-hover);
+  }
+}
+
+.contacts,
+.email {
+  padding: 30px 0;
+}

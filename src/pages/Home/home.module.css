@@ -1,0 +1,28 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  margin-bottom: 18px;
+}
+.subtext {
+  color: var(--color-label);
+  margin-bottom: 18px;
+  font-weight: 500;
+}
+
+.thumb {
+  border-width: 0;
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
+    0 1px 3px 1px rgba(60, 64, 67, 0.15);
+  border-radius: 8px;
+  width: 750px;
+
+  overflow: hidden;
+}
+.iconBook {
+  display: block;
+  max-width: 100%;
+}
