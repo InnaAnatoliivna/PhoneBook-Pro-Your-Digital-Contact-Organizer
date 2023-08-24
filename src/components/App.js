@@ -33,8 +33,8 @@ export const App = () => {
               path="login"
               element={<RestrictedRoute component={<LoginPage />} redirectTo='/contacts' />} />
             <Route path="contacts" element={<PrivateRoute component={<ContactsPage />} redirectTo='/' />} />
+            <Route path="*" element={<ErrorPage />} />
           </Route>
-          <Route path="*" element={<ErrorPage />} />
         </Routes>
       </Suspense>
     )
