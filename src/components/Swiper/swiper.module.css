@@ -1,0 +1,17 @@
+.iconBook {
+  display: block;
+  max-width: 100%;
+}
+.thumb {
+  border-width: 0;
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
+    0 1px 3px 1px rgba(60, 64, 67, 0.15);
+  border-radius: 8px;
+  width: 750px;
+
+  overflow: hidden;
+
+  margin: 7px auto 50px auto;
+  display: flex;
+  justify-content: center;
+}
