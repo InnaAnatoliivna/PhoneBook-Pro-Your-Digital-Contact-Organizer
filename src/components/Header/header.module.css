@@ -1,27 +1,73 @@
 .wrapper {
-  background-color: #a7dae7;
+  background-color: var(--main-bc);
   box-shadow: 0 5px 20px rgba(74, 82, 124, 0.2);
 
-  margin-bottom: 22px;
+  margin-bottom: 15px;
 }
+
+.flexWrapp {
+  display: flex;
+  justify-content: space-between;
+}
+
 .title {
   color: var(--color-title);
   font-weight: 700;
-  font-size: 35px;
+  font-size: 18px;
   text-decoration: none;
 
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .subtitle {
   color: var(--color-title);
   font-weight: 500;
-  font-size: 18.5px;
+  font-size: 12px;
 
-  margin-top: 8px;
-  padding-bottom: 16px;
+  margin-top: 5px;
+  padding-bottom: 10px;
 }
 
 .flexChild {
   margin-left: auto;
+}
+
+.burgerIcons {
+  font-size: 24px;
+  color: var(--color-border);
+}
+.button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 767px) {
+  .wrapText {
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+  }
+}
+/* >>>>>>>>>>>>> style for tablet */
+@media screen and (min-width: 768px) {
+  .wrapper {
+    margin-bottom: 22px;
+  }
+}
+/* >>>>>>>>>>>>> style for desktop */
+@media screen and (min-width: 1280px) {
+  .title {
+    color: var(--color-title);
+    font-size: 35px;
+    padding-top: 20px;
+  }
+
+  .subtitle {
+    color: var(--color-title);
+    font-size: 18.5px;
+
+    margin-top: 8px;
+    padding-bottom: 16px;
+  }
 }

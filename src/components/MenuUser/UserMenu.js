@@ -3,7 +3,6 @@ import React from 'react';
 import css from './userMenu.module.css';
 import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
-// import { logOutUser } from 'redux/auth/operations';
 import { logOut } from 'redux/auth/userSlice';
 
 const UserMenu = () => {
@@ -15,7 +14,7 @@ const UserMenu = () => {
 
     return (
         <div className={css.flexParent}>
-            <Link to="/contacts" className={css.contacts}>My contacts</Link>
+            <Link to="/contacts" className={css.contacts}>Contacts</Link>
             <div className={css.wrapper}>
                 <p className={css.email}>{user.email}</p>
                 <button

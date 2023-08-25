@@ -1,8 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 // import Swiper core and required modules
-import { Navigation, Pagination, A11y, EffectFade, Autoplay } from 'swiper/modules';
+import { Navigation, A11y, EffectFade, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import css from './swiper.module.css';
 //image
 import screenPhoneBook1 from 'images/nav-1.jpg';
 import screenPhoneBook2 from 'images/singup-2.jpg';
@@ -16,7 +15,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
 const SwiperHomes = () => {
-    const swiperRef = useRef(null); // Створіть посилання useRef
+    const swiperRef = useRef(null);
     useEffect(() => {
         const swiperInstance = swiperRef.current.swiper;
         const autoplayInterval = setInterval(() => {
@@ -24,23 +23,21 @@ const SwiperHomes = () => {
                 swiperInstance.slideNext();
             }
         }, 4000);
-
         return () => clearInterval(autoplayInterval);
     }, []);
+
     return (
         <div className='container'>
             <Swiper
                 ref={swiperRef}
-                modules={[Navigation, Pagination, A11y, EffectFade, Autoplay]}
+                modules={[Navigation, A11y, EffectFade, Autoplay]}
                 spaceBetween={30}
                 centeredSlides={true}
                 autoplay={false}
-                // pagination={{ clickable: true }}
                 navigation={true}
                 mousewheel={true}
                 loopedSlides={5}
                 effect="fade"
-                className={css.swiper}
                 breakpoints={{
                     320: {
                         slidesPerView: 1,
@@ -56,9 +53,7 @@ const SwiperHomes = () => {
                     },
                 }}
             >
-
                 <SwiperSlide>
-                    {/* <div className={css.thumb}> */}
                     <img src={screenPhoneBook1}
                         alt='navigation'
                         srcSet={`
@@ -68,11 +63,9 @@ const SwiperHomes = () => {
                         sizes="
                             (max-width: 320px) 320px, 
                             (max-width: 768px) 768px, 1280px"
-                        className={css.iconBook} />
-                    {/* </div> */}
+                    />
                 </SwiperSlide>
                 <SwiperSlide>
-                    {/* <div className={css.thumb}> */}
                     <img src={screenPhoneBook2}
                         alt='how to sign up'
                         srcSet={`
@@ -82,11 +75,9 @@ const SwiperHomes = () => {
                         sizes="
                             (max-width: 320px) 320px, 
                             (max-width: 768px) 768px, 1280px"
-                        className={css.iconBook} />
-                    {/* </div> */}
+                    />
                 </SwiperSlide>
                 <SwiperSlide>
-                    {/* <div className={css.thumb}> */}
                     <img src={screenPhoneBook3}
                         alt='how to login'
                         srcSet={`
@@ -96,11 +87,9 @@ const SwiperHomes = () => {
                         sizes="
                             (max-width: 320px) 320px, 
                             (max-width: 768px) 768px, 1280px"
-                        className={css.iconBook} />
-                    {/* </div> */}
+                    />
                 </SwiperSlide>
                 <SwiperSlide>
-                    {/* <div className={css.thumb}> */}
                     <img src={screenPhoneBook4}
                         alt='user account'
                         srcSet={`
@@ -110,11 +99,9 @@ const SwiperHomes = () => {
                         sizes="
                             (max-width: 320px) 320px, 
                             (max-width: 768px) 768px, 1280px"
-                        className={css.iconBook} />
-                    {/* </div> */}
+                    />
                 </SwiperSlide>
                 <SwiperSlide>
-                    {/* <div className={css.thumb}> */}
                     <img src={screenPhoneBook5}
                         alt='your contacts'
                         srcSet={`
@@ -124,8 +111,7 @@ const SwiperHomes = () => {
                         sizes="
                             (max-width: 320px) 320px, 
                             (max-width: 768px) 768px, 1280px"
-                        className={css.iconBook} />
-                    {/* </div> */}
+                    />
                 </SwiperSlide>
             </Swiper>
         </div>)
