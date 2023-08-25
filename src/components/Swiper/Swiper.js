@@ -35,7 +35,7 @@ const SwiperHomes = () => {
                 spaceBetween={30}
                 centeredSlides={true}
                 autoplay={false}
-                pagination={{ clickable: true }}
+                // pagination={{ clickable: true }}
                 navigation={true}
                 mousewheel={true}
                 loopedSlides={5}
@@ -58,74 +58,74 @@ const SwiperHomes = () => {
             >
 
                 <SwiperSlide>
-                    <div className={css.thumb}>
-                        <img src={screenPhoneBook1}
-                            alt='navigation'
-                            srcSet={`
+                    {/* <div className={css.thumb}> */}
+                    <img src={screenPhoneBook1}
+                        alt='navigation'
+                        srcSet={`
                             ${screenPhoneBook1} 320w,
                             ${screenPhoneBook1} 768w, 
                             ${screenPhoneBook1} 1280w`}
-                            sizes="
+                        sizes="
                             (max-width: 320px) 320px, 
                             (max-width: 768px) 768px, 1280px"
-                            className={css.iconBook} />
-                    </div>
+                        className={css.iconBook} />
+                    {/* </div> */}
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className={css.thumb}>
-                        <img src={screenPhoneBook2}
-                            alt='how to sign up'
-                            srcSet={`
+                    {/* <div className={css.thumb}> */}
+                    <img src={screenPhoneBook2}
+                        alt='how to sign up'
+                        srcSet={`
                             ${screenPhoneBook2} 320w, 
                             ${screenPhoneBook2} 768w, 
                             ${screenPhoneBook2} 1280w`}
-                            sizes="
+                        sizes="
                             (max-width: 320px) 320px, 
                             (max-width: 768px) 768px, 1280px"
-                            className={css.iconBook} />
-                    </div>
+                        className={css.iconBook} />
+                    {/* </div> */}
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className={css.thumb}>
-                        <img src={screenPhoneBook3}
-                            alt='how to login'
-                            srcSet={`
+                    {/* <div className={css.thumb}> */}
+                    <img src={screenPhoneBook3}
+                        alt='how to login'
+                        srcSet={`
                             ${screenPhoneBook3} 320w, 
                             ${screenPhoneBook3} 768w, 
                             ${screenPhoneBook3} 1280w`}
-                            sizes="
+                        sizes="
                             (max-width: 320px) 320px, 
                             (max-width: 768px) 768px, 1280px"
-                            className={css.iconBook} />
-                    </div>
+                        className={css.iconBook} />
+                    {/* </div> */}
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className={css.thumb}>
-                        <img src={screenPhoneBook4}
-                            alt='user account'
-                            srcSet={`
+                    {/* <div className={css.thumb}> */}
+                    <img src={screenPhoneBook4}
+                        alt='user account'
+                        srcSet={`
                             ${screenPhoneBook4} 320w, 
                             ${screenPhoneBook4} 768w, 
                             ${screenPhoneBook4} 1280w`}
-                            sizes="
+                        sizes="
                             (max-width: 320px) 320px, 
                             (max-width: 768px) 768px, 1280px"
-                            className={css.iconBook} />
-                    </div>
+                        className={css.iconBook} />
+                    {/* </div> */}
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className={css.thumb}>
-                        <img src={screenPhoneBook5}
-                            alt='your contacts'
-                            srcSet={`
+                    {/* <div className={css.thumb}> */}
+                    <img src={screenPhoneBook5}
+                        alt='your contacts'
+                        srcSet={`
                             ${screenPhoneBook5} 320w, 
                             ${screenPhoneBook5} 768w, 
                             ${screenPhoneBook5} 1280w`}
-                            sizes="
+                        sizes="
                             (max-width: 320px) 320px, 
                             (max-width: 768px) 768px, 1280px"
-                            className={css.iconBook} />
-                    </div>
+                        className={css.iconBook} />
+                    {/* </div> */}
                 </SwiperSlide>
             </Swiper>
         </div>)
