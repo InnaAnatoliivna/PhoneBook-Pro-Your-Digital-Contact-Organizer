@@ -28,6 +28,7 @@ const Header = ({ headTitle, headSubTitle }) => {
                         <button type='button' onClick={handleBurgerMenu} className={css.button}>
                             <TiThMenuOutline className={css.burgerIcons} />
                         </button>)}
+
                     <div className={css.wrapText}>
                         <Link to="/" className={css.title}>{headTitle}</Link>
                         <p className={css.subtitle}>{headSubTitle}</p>

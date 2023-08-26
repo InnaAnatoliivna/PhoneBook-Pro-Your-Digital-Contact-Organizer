@@ -2,9 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  justify-content: end;
-
-  margin-top: 110px;
 }
 
 .contacts {
@@ -31,7 +28,7 @@
   background: var(--bc-btn);
   font-size: 16px;
 
-  padding: 14px 10px;
+  padding: 12px 8px;
   border-radius: 14px;
   border-color: transparent;
   display: inline-block;
@@ -43,11 +40,6 @@
   }
 }
 
-.contacts,
-.email {
-  padding-bottom: 18px;
-}
-
 @media screen and (max-width: 767px) {
   .flexParent {
     padding-left: 15px;
@@ -55,53 +47,41 @@
 
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
+  }
+  .contacts {
+    align-self: center;
+  }
+  .wrapper {
+    margin-top: 110px;
+  }
+  .contacts,
+  .email {
+    padding-bottom: 18px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .flexParent {
     display: flex;
+    align-items: baseline;
   }
   .wrapper {
-    display: flex;
     flex-direction: row;
     gap: 20px;
     justify-content: center;
     align-items: center;
+    padding: 12px 0;
   }
 
   .contacts {
     font-weight: 700;
 
     margin-right: 20px;
-    padding: 30px 0;
+    padding: 22px 0;
     display: flex;
   }
 
-  .email {
-    font-size: 20px;
-    font-weight: 400;
-    color: var(--color-title);
-  }
-
   .button {
-    color: var(--color-btn);
-    background: var(--bc-btn);
-    font-size: 16px;
-
     padding: 14px 10px;
-    border-radius: 14px;
-    border-color: transparent;
-    display: inline-block;
-    outline: none;
-    transition: background linear 500px;
-
-    &:hover {
-      background: var(--bc-btn-hover);
-    }
   }
 }
-/* @media screen and (min-width: 1280px) {
-
-} */

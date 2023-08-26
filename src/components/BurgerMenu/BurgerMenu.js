@@ -2,7 +2,7 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectMenu } from 'redux/selectors';
 import css from './menu.module.css';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { useAuth } from 'hooks/useAuth';
 import UserMenu from 'components/MenuUser/UserMenu';
 import AuthMenu from 'components/MenuAuth/AuthMenu';
@@ -28,7 +28,7 @@ const BurgerMenu = () => {
                     className={css.button}>
                     <MdOutlineClose className={css.icon} />
                 </button>
-                <Link to="/" className={css.link}>Home</Link>
+                <NavLink to="/" className={css.link}>Home</NavLink>
             </div>
             {isLoggedIn ? <UserMenu /> : <AuthMenu />}
         </div>

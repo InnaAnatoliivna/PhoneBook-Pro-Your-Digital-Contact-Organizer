@@ -1,6 +1,6 @@
 .wrapper {
   display: flex;
-  gap: 30px;
+  gap: 40px;
 }
 
 .item {
@@ -9,10 +9,24 @@
   text-decoration: none;
   color: var(--color-title);
 
-  padding: 30px 0;
+  padding: 22px 0;
   transition: color linear 500ms;
   &:hover {
     color: var(--bc-btn-hover);
   }
 }
-/* a  */
+
+@media screen and (max-width: 767px) {
+  .wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    gap: 0px;
+  }
+  .item {
+    margin-top: 15px;
+    padding: 0 0 5px 0;
+  }
+}
