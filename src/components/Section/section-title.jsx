@@ -5,7 +5,11 @@ const Section = ({ title, children }) => {
     return (
         <div className={css.background}>
             <h2 className={css.title}>
-                <img src={iconBook} alt='icon' width="38" height="35" className={css.iconBook} />
+                <img src={iconBook}
+                    alt='icon'
+                    width="38"
+                    height="35"
+                    className={css.iconBook} />
                 {title}</h2>
             {children}
         </div>

@@ -3,7 +3,7 @@
   padding: 30px 50px 30px;
   border-radius: 3px;
   max-width: 350px;
-  margin: 0 auto;
+  margin: 0 auto 70px auto;
 
   -webkit-box-shadow: 0px 1px 3px 0px #b2b2b2;
   box-shadow: 0px 1px 3px 0px #b2b2b2;
@@ -49,4 +49,7 @@
 .label {
   align-self: start;
   color: var(--color-label);
+}
+
+@media screen and (min-width: 768px) {
 }

@@ -1,8 +1,11 @@
 .list {
   display: flex;
-  column-gap: 40px;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: center;
-  max-height: 500px;
+}
+@media screen and (min-width: 768px) {
+  .list {
+    column-gap: 40px;
+    flex-wrap: wrap;
+  }
 }

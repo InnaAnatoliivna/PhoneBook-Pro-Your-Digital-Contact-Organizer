@@ -6,17 +6,17 @@
   border-bottom: 1px solid #e5e5e5;
 }
 .item:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 }
 
 .icon {
-  padding-right: 18px;
+  padding-right: 10px;
   color: var(--bc-btn);
-  font-size: 30px;
+  font-size: 24px;
 }
 
 .itemText {
-  font-size: 22px;
+  font-size: 14px;
   color: var(--color-title);
 
   display: flex;
@@ -25,13 +25,54 @@
 
 .btn {
   color: var(--color-label);
-  font-size: 14px;
-  padding: 5px 8px;
+  font-size: 12px;
+  padding: 3px 5px;
   outline: none;
   border-color: transparent;
   border-radius: 10px;
   &:hover {
     color: var(--color-btn);
     background-color: var(--bc-btn-hover);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .icon {
+    padding-right: 18px;
+    font-size: 30px;
+  }
+  .itemText {
+    font-size: 22px;
+  }
+  .btn {
+    font-size: 14px;
+    padding: 5px 8px;
+  }
+}
+/* bbhbhhhhhhhhhhhhhhhhhhhhhhhh */
+.container {
+  max-width: 1406px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 365px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 734px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1406px;
   }
 }

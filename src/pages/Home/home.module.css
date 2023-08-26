@@ -5,11 +5,11 @@
 }
 
 .title {
-  margin-bottom: 18px;
+  margin-bottom: 10px;
 }
 .subtext {
   color: var(--color-label);
-  margin-bottom: 18px;
+  margin-bottom: 15px;
   font-weight: 500;
 }
 
@@ -18,11 +18,37 @@
   box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
     0 1px 3px 1px rgba(60, 64, 67, 0.15);
   border-radius: 8px;
-  width: 750px;
-
+  /* width: 750px; */
   overflow: hidden;
 }
 .iconBook {
   display: block;
   max-width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  /* .wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  } */
+  .thumb {
+    margin-bottom: 90px;
+  }
+  .title {
+    font-size: 16px;
+  }
+  .subtext {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    margin-bottom: 18px;
+  }
+  .subtext {
+    color: var(--color-label);
+    margin-bottom: 18px;
+    font-weight: 500;
+  }
 }

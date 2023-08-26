@@ -33,7 +33,7 @@
   border-color: transparent;
   display: inline-block;
   outline: none;
-  transition: background linear 500px;
+  transition: background linear 500ms;
 
   &:hover {
     background: var(--bc-btn-hover);
@@ -47,16 +47,17 @@
 
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
   }
   .contacts {
     align-self: center;
   }
   .wrapper {
-    margin-top: 110px;
+    margin-top: 200px;
   }
   .contacts,
   .email {
-    padding-bottom: 18px;
+    padding-bottom: 5px;
   }
 }
 

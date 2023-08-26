@@ -1,4 +1,4 @@
-import React from 'react';
+// import React, { useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectMenu } from 'redux/selectors';
 import css from './menu.module.css';
@@ -14,10 +14,32 @@ const BurgerMenu = () => {
     const isOpenMenu = useSelector(selectMenu);
     const dispatch = useDispatch();
     const { isLoggedIn } = useAuth();
+    // const menuRef = useRef(null);
 
     const addedClass = isOpenMenu ? 'open' : 'close';
 
     const handleCloseMenu = () => dispatch(closeMenu());
+    //---
+
+    // useEffect(() => {
+    //     const handleOutsideClick = event => {
+    //         if (menuRef.current && !menuRef.current.contains(event.target)) {
+    //             dispatch(closeMenu());
+    //         }
+    //     };
+    //     if (isOpenMenu) {
+    //         document.body.classList.add('no-scroll'); // Додати клас для блокування прокручування
+    //     } else {
+    //         document.body.classList.remove('no-scroll'); // Видалити клас для блокування прокручування
+    //     }
+
+    //     document.addEventListener('click', handleOutsideClick);
+    //     return () => {
+    //         document.removeEventListener('click', handleOutsideClick);
+    //         document.body.classList.remove('no-scroll'); // Видалити клас при закритті меню
+    //     };
+    // }, [isOpenMenu, dispatch]);
+    // //--
 
     return (
         <div className={`burger-menu ${addedClass}`}>

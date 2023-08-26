@@ -19,6 +19,7 @@
   border: none;
   background-color: transparent;
   align-self: self-end;
+  padding: 0;
 
   margin-bottom: 30px;
 }
@@ -39,4 +40,5 @@
   padding: 15px 15px 0 15px;
 
   /* margin-bottom: 18px; */
+  margin-bottom: 18px;
 }
