@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/PhoneBook-Pro-Your-Digital-Contact-Organizer/static/css/main.905a31da.css",
-    "main.js": "/PhoneBook-Pro-Your-Digital-Contact-Organizer/static/js/main.afd5e619.js",
+    "main.js": "/PhoneBook-Pro-Your-Digital-Contact-Organizer/static/js/main.5bed5e3a.js",
     "static/css/165.a5ffc51e.chunk.css": "/PhoneBook-Pro-Your-Digital-Contact-Organizer/static/css/165.a5ffc51e.chunk.css",
-    "static/js/165.2a2ead01.chunk.js": "/PhoneBook-Pro-Your-Digital-Contact-Organizer/static/js/165.2a2ead01.chunk.js",
+    "static/js/165.da39a56c.chunk.js": "/PhoneBook-Pro-Your-Digital-Contact-Organizer/static/js/165.da39a56c.chunk.js",
     "static/css/429.87b867f1.chunk.css": "/PhoneBook-Pro-Your-Digital-Contact-Organizer/static/css/429.87b867f1.chunk.css",
     "static/js/429.a24c2d83.chunk.js": "/PhoneBook-Pro-Your-Digital-Contact-Organizer/static/js/429.a24c2d83.chunk.js",
     "static/css/800.79cf4125.chunk.css": "/PhoneBook-Pro-Your-Digital-Contact-Organizer/static/css/800.79cf4125.chunk.css",
@@ -22,9 +22,9 @@
     "static/media/login-3.jpg": "/PhoneBook-Pro-Your-Digital-Contact-Organizer/static/media/login-3.95b4c161a28bcf1f2296.jpg",
     "index.html": "/PhoneBook-Pro-Your-Digital-Contact-Organizer/index.html",
     "main.905a31da.css.map": "/PhoneBook-Pro-Your-Digital-Contact-Organizer/static/css/main.905a31da.css.map",
-    "main.afd5e619.js.map": "/PhoneBook-Pro-Your-Digital-Contact-Organizer/static/js/main.afd5e619.js.map",
+    "main.5bed5e3a.js.map": "/PhoneBook-Pro-Your-Digital-Contact-Organizer/static/js/main.5bed5e3a.js.map",
     "165.a5ffc51e.chunk.css.map": "/PhoneBook-Pro-Your-Digital-Contact-Organizer/static/css/165.a5ffc51e.chunk.css.map",
-    "165.2a2ead01.chunk.js.map": "/PhoneBook-Pro-Your-Digital-Contact-Organizer/static/js/165.2a2ead01.chunk.js.map",
+    "165.da39a56c.chunk.js.map": "/PhoneBook-Pro-Your-Digital-Contact-Organizer/static/js/165.da39a56c.chunk.js.map",
     "429.87b867f1.chunk.css.map": "/PhoneBook-Pro-Your-Digital-Contact-Organizer/static/css/429.87b867f1.chunk.css.map",
     "429.a24c2d83.chunk.js.map": "/PhoneBook-Pro-Your-Digital-Contact-Organizer/static/js/429.a24c2d83.chunk.js.map",
     "800.79cf4125.chunk.css.map": "/PhoneBook-Pro-Your-Digital-Contact-Organizer/static/css/800.79cf4125.chunk.css.map",
@@ -37,6 +37,6 @@
   },
   "entrypoints": [
     "static/css/main.905a31da.css",
-    "static/js/main.afd5e619.js"
+    "static/js/main.5bed5e3a.js"
   ]
 }
