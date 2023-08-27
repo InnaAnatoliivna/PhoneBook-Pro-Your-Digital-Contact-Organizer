@@ -58,11 +58,12 @@ const SwiperHomes = () => {
                         alt='navigation'
                         srcSet={`
                             ${screenPhoneBook1} 320w,
-                            ${screenPhoneBook1} 768w, 
+                            ${screenPhoneBook1} 700w, 
                             ${screenPhoneBook1} 1280w`}
                         sizes="
                             (max-width: 320px) 320px, 
-                            (max-width: 768px) 768px, 1280px"
+                            (max-width: 768px) 700px, 
+                            (max-width: 1280px) 1280"
                     />
                 </SwiperSlide>
                 <SwiperSlide>
@@ -70,11 +71,12 @@ const SwiperHomes = () => {
                         alt='how to sign up'
                         srcSet={`
                             ${screenPhoneBook2} 320w, 
-                            ${screenPhoneBook2} 768w, 
+                            ${screenPhoneBook2} 700w, 
                             ${screenPhoneBook2} 1280w`}
                         sizes="
                             (max-width: 320px) 320px, 
-                            (max-width: 768px) 768px, 1280px"
+                            (max-width: 768px) 700px, 
+                            (max-width: 1280px) 1280"
                     />
                 </SwiperSlide>
                 <SwiperSlide>
@@ -82,11 +84,12 @@ const SwiperHomes = () => {
                         alt='how to login'
                         srcSet={`
                             ${screenPhoneBook3} 320w, 
-                            ${screenPhoneBook3} 768w, 
+                            ${screenPhoneBook3} 700w, 
                             ${screenPhoneBook3} 1280w`}
                         sizes="
                             (max-width: 320px) 320px, 
-                            (max-width: 768px) 768px, 1280px"
+                            (max-width: 768px) 700px, 
+                            (max-width: 1280px) 1280"
                     />
                 </SwiperSlide>
                 <SwiperSlide>
@@ -94,11 +97,12 @@ const SwiperHomes = () => {
                         alt='user account'
                         srcSet={`
                             ${screenPhoneBook4} 320w, 
-                            ${screenPhoneBook4} 768w, 
+                            ${screenPhoneBook4} 700w, 
                             ${screenPhoneBook4} 1280w`}
                         sizes="
                             (max-width: 320px) 320px, 
-                            (max-width: 768px) 768px, 1280px"
+                            (max-width: 768px) 700px,
+                            (max-width: 1280px) 1280"
                     />
                 </SwiperSlide>
                 <SwiperSlide>
@@ -106,11 +110,12 @@ const SwiperHomes = () => {
                         alt='your contacts'
                         srcSet={`
                             ${screenPhoneBook5} 320w, 
-                            ${screenPhoneBook5} 768w, 
+                            ${screenPhoneBook5} 700w, 
                             ${screenPhoneBook5} 1280w`}
                         sizes="
                             (max-width: 320px) 320px, 
-                            (max-width: 768px) 768px, 1280px"
+                            (max-width: 768px) 700px, 
+                            (max-width: 1280px) 1280"
                     />
                 </SwiperSlide>
             </Swiper>
