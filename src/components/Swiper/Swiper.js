@@ -27,7 +27,7 @@ const SwiperHomes = () => {
     }, []);
 
     return (
-        <div className='container'>
+        <div>
             <Swiper
                 ref={swiperRef}
                 modules={[Navigation, A11y, EffectFade, Autoplay]}

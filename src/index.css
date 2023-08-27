@@ -70,6 +70,15 @@ button {
     font-size: 24px;
     margin-bottom: 22px;
   }
+  .flex-wrap {
+    display: flex;
+  }
+  .text-message {
+    font-size: 20px;
+  }
+  .swiper {
+    width: 700px;
+  }
 }
 @media screen and (min-width: 1280px) {
   .container {
@@ -82,15 +91,6 @@ button {
   font-size: 14px;
   display: flex;
   justify-content: center;
-}
-
-@media screen and (min-width: 768px) {
-  .flex-wrap {
-    display: flex;
-  }
-  .text-message {
-    font-size: 20px;
-  }
 }
 
 .active {
@@ -123,7 +123,7 @@ button {
 
   padding: 10px auto 70px auto;
 
-  margin-bottom: 22px;
+  margin-bottom: 90px;
 }
 
 .swiper-slide {
