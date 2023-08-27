@@ -37,7 +37,7 @@ const SwiperHomes = () => {
                 navigation={true}
                 mousewheel={true}
                 loopedSlides={5}
-                effect="fade"
+                // effect="fade"
                 breakpoints={{
                     320: {
                         slidesPerView: 1,
