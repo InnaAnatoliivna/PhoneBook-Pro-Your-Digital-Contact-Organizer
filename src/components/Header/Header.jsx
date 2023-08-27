@@ -7,6 +7,7 @@ import { useMediaQuery } from 'react-responsive';
 import { TiThMenuOutline } from 'react-icons/ti';
 import { useDispatch } from 'react-redux';
 import { closeMenu, openMenu } from 'redux/reducers/menuSlice';
+import { useEffect } from 'react';
 
 const Header = ({ headTitle, headSubTitle }) => {
     const { isLoggedIn } = useAuth();
@@ -15,7 +16,11 @@ const Header = ({ headTitle, headSubTitle }) => {
     const isDesktopOrTablet = useMediaQuery({ query: '(min-width: 768px)' });
     const isMobile = useMediaQuery({ query: '(max-width: 767px)' });
 
-    if (isDesktopOrTablet) dispatch(closeMenu());
+    useEffect(() => {
+        if (isDesktopOrTablet) {
+            dispatch(closeMenu());
+        }
+    }, [isDesktopOrTablet, dispatch]);
 
     const handleBurgerMenu = () => dispatch(openMenu());
 

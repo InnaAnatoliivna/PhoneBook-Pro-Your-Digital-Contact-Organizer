@@ -63,8 +63,6 @@ button {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 704px;
-    /* padding-left: 32px; */
-    /* padding-right: 32px; */
     padding: 0 32px;
   }
 
@@ -76,14 +74,12 @@ button {
 @media screen and (min-width: 1280px) {
   .container {
     max-width: 1216px;
-    /* padding-left: 32px;
-    padding-right: 32px; */
   }
 }
 
 .text-message {
   color: var(--color-input);
-  font-size: 20px;
+  font-size: 14px;
   display: flex;
   justify-content: center;
 }
@@ -91,6 +87,9 @@ button {
 @media screen and (min-width: 768px) {
   .flex-wrap {
     display: flex;
+  }
+  .text-message {
+    font-size: 20px;
   }
 }
 
@@ -148,23 +147,22 @@ button {
 /* -----burger menu------- */
 
 .burger-menu {
-  width: 0;
+  overflow: hidden;
+  width: 100vw;
   height: 100vh;
   position: fixed;
   top: 0;
-  left: -100%;
-  /* transform: translateX(-100%); */
+  /* left: -100%; */
+  transform: translateX(-100%);
   background-color: var(--main-bc);
   z-index: 1000;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.4s ease-in-out;
-
-  overflow: hidden;
 }
 
 .open {
   width: 90%;
-  left: 0;
+  /* left: 0; */
   transform: translateX(0);
 }
 

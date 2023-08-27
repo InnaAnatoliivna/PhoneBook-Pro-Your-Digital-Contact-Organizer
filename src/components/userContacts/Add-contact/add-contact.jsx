@@ -6,6 +6,7 @@ import css from 'components/userContacts/Add-contact/add-contact.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectContacts } from '../../../redux/selectors';
 import { addContact } from '../../../redux/operations';
+import { validationAddContactForm } from 'components/validationSchemes';
 
 const nameInputId = getRandomId();
 const numerInputId = getRandomId();
@@ -26,12 +27,18 @@ const AddContactForm = () => {
     const onAddToContacts = e => {
         e.preventDefault();
         const dataFields = { name: name, number: number };
-        const isContact = contacts.find(contact => contact.name === dataFields.name);
-        !isContact ?
-            dispatch(addContact(dataFields))
-            : toast.warn(`${name} is already in contacts`);
-        setName('');
-        setNumber('');
+        //Validation check with yup
+        try {
+            validationAddContactForm.validateSync(dataFields);
+            const isContact = contacts.find(contact => contact.name === dataFields.name);
+            !isContact
+                ? dispatch(addContact(dataFields))
+                : toast.warn(`${name} is already in contacts`);
+            setName('');
+            setNumber('');
+        } catch (error) {
+            toast.error(error.message);
+        }
     }
 
     return (
@@ -44,8 +51,6 @@ const AddContactForm = () => {
                     className={css.input}
                     type="text"
                     name="name"
-                    pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
-                    title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
                     value={name}
                     onChange={onChangeInput}
                     required
@@ -57,8 +62,6 @@ const AddContactForm = () => {
                     className={css.input}
                     type="tel"
                     name="number"
-                    pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
-                    title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
                     value={number}
                     onChange={onChangeInput}
                     required

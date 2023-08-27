@@ -29,17 +29,20 @@ const Contacts = () => {
     }
 
     return (
-        contacts.length > 0 ?
-            (<ul onClick={handleClick} className={css.list}>
-                {filteredContacts().map(({ id, name, number }) => (
-                    <SavedContact
-                        key={id}
-                        id={id}
-                        name={name}
-                        number={number}
-                    />
-                ))}
-            </ul>) : (<p className='text-message'>The contact list is empty.</p>)
+        <>
+            {contacts.length > 0
+                ? (<ul onClick={handleClick} className={css.list}>
+                    {filteredContacts().map(({ id, name, number }) => (
+                        <SavedContact
+                            key={id}
+                            id={id}
+                            name={name}
+                            number={number}
+                        />
+                    ))}
+                </ul>)
+                : (<p className='text-message'>'The contact list is empty.'</p>)}
+        </>
     )
 }
 

@@ -12,16 +12,17 @@ const SearchContact = ({ searchTitle }) => {
     };
 
     return (
-        contacts.length > 0 &&
-        (<div className={css.wrapper}>
-            <h3 className={css.title}>{searchTitle}</h3>
-            <input
-                className={css.input}
-                type="text"
-                onInput={handleSearchInput}
-            />
-        </div>)
-    );
+        <>
+            {contacts.length > 0 &&
+                (<div className={css.wrapper}>
+                    <h3 className={css.title}>{searchTitle}</h3>
+                    <input
+                        className={css.input}
+                        type="text"
+                        onInput={handleSearchInput}
+                    />
+                </div>)}
+        </>);
 }
 
 export default SearchContact;
